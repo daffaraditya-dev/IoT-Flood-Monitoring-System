@@ -27,7 +27,7 @@ def resolve_api_base(api_key: str) -> str:
 
 API_BASE = resolve_api_base(API_KEY)
 WORKER_ID = "worker-main"
-DEVICE_IDS = ["DEV001", "DEV002", "DEV003"]
+DEVICE_IDS = ["DEV001"]
 POLL_INTERVAL_SECONDS = 3
 
 HEADERS = {"X-API-KEY": API_KEY, "Content-Type": "application/json"}
