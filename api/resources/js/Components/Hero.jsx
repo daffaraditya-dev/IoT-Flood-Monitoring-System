@@ -163,6 +163,12 @@ export default function Hero({ auth, canLogin, canRegister }) {
 
     return (
         <section className="relative min-h-screen w-full overflow-x-clip overflow-y-visible bg-slate-950">
+            <img
+                src="/img/air.png"
+                alt=""
+                className="pointer-events-none absolute inset-0 z-0 h-full w-full object-cover"
+                draggable={false}
+            />
             <div className="relative mx-auto min-h-screen max-w-[1600px]">
                 {/* Kiri ~45% ruang konten */}
                 <div className="relative z-20 flex min-h-screen flex-col justify-start px-4 pb-16 pt-36 sm:px-6 sm:pt-40 lg:absolute lg:left-0 lg:top-0 lg:w-[45%] lg:px-8 lg:pb-0 lg:pt-36 xl:px-12">
@@ -219,14 +225,6 @@ export default function Hero({ auth, canLogin, canRegister }) {
                 >
                     <div className="relative flex h-[min(400px,72vw)] w-[min(560px,94vw)] items-center justify-center sm:h-[400px] sm:w-[560px] lg:-translate-x-4 lg:-translate-y-4 xl:-translate-x-8 xl:-translate-y-8">
                         <div className="relative h-[440px] w-[620px] max-h-full max-w-full origin-center -rotate-[16deg]">
-                            {/* Visual background air flow */}
-                            <img
-                                src="/img/air.png"
-                                alt=""
-                                className="pointer-events-none absolute inset-[-50%] z-0 h-[240%] w-[240%] max-w-none object-cover -translate-x-96 -translate-y-24 rotate-[24deg]"
-                                draggable={false}
-                            />
-
                             {/* Card: Glassmorphism effect */}
                             <motion.div
                                 initial={
