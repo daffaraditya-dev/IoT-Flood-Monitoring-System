@@ -14,9 +14,9 @@
 #include <ESP8266HTTPClient.h>
 #endif
 
-const char *WIFI_SSID = "Dangpuuu";
-const char *WIFI_PASSWORD = "raditya16";
-const char *API_HOST = "http://10.57.212.217:8000";
+const char *WIFI_SSID = "WiFi-VokasiUB2";
+const char *WIFI_PASSWORD = "vokasiub";
+const char *API_HOST = "http://10.35.96.170:8000";
 const char *API_KEY = "FLOOD-SECRET-KEY-2025";
 // ID teknis ke API (tetap DEV001). Nama tampilan di server: Ciledug-Dapa
 const char *DEVICE_ID = "DEV001";
