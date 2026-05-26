@@ -110,26 +110,7 @@ export default function Welcome({ auth, canLogin, canRegister }) {
                             </span>
                         </Link>
 
-                        <nav className="flex shrink-0 items-center gap-2 sm:gap-4">
-                            {auth.user ? (
-                                <Link href={route('dashboard')} className="rounded-xl px-3 py-2 text-sm font-medium text-white ring-1 ring-transparent transition hover:bg-slate-800/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-400">
-                                    Dashboard
-                                </Link>
-                            ) : (
-                                <>
-                                    {canLogin ? (
-                                        <Link href={route('login')} className="rounded-xl px-3 py-2 text-sm font-medium text-white ring-1 ring-transparent transition hover:bg-slate-800/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-400">
-                                            Login
-                                        </Link>
-                                    ) : null}
-                                    {canRegister ? (
-                                        <Link href={route('register')} className="rounded-xl border border-sky-400/40 bg-slate-800/90 px-3 py-2 text-sm font-semibold text-sky-200 shadow-sm backdrop-blur-sm transition hover:bg-slate-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-400">
-                                            Register
-                                        </Link>
-                                    ) : null}
-                                </>
-                            )}
-                        </nav>
+                       
                     </motion.header>
 
                     {/* --- KONTEN UTAMA --- */}
